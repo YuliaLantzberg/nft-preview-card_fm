@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8rem;
+	box-sizing: border-box;
+	display: grid;
+	place-items: center;
+	background-color: hsl(217, 54%, 11%);
+	height: 100vh;
+	color: hsl(215, 51%, 70%);
+	position: relative;
+}
+
+main {
+	background-color: hsl(216, 50%, 16%);
+	font-family: "Outfit", sans-serif;
+	width: 25%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+
+.hero {
+	max-width: 31rem;
+	border-radius: 1rem;
+	margin-top: -1rem;
+}
+
+.title {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 2rem 0;
+}
+
+.description {
+	margin-bottom: 1.5rem;
+}
+.details {
+	display: flex;
+	margin: 1.5rem 0;
+	justify-content: space-between;
+}
+
+.details div {
+	display: flex;
+	gap: 1rem;
+}
+
+.details-left {
+	color: hsl(178, 100%, 50%);
+}
+
+hr {
+	width: 100%;
+	border: solid 1px hsl(215, 32%, 27%);
+}
+
+.footer {
+	display: flex;
+	align-self: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer img {
+	width: 3rem;
+	border-radius: 50%;
+	border: solid 1px white;
+}
+
+.name {
+	color: #fff;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
