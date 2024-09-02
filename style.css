@@ -1,3 +1,7 @@
+:root {
+	--hover-color: hsl(178, 100%, 50%);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -36,6 +40,48 @@ main {
 	max-width: 31rem;
 	border-radius: 1rem;
 	margin-top: -1rem;
+	cursor: pointer;
+}
+
+.hero-wrapper {
+	max-width: 90%;
+	max-height: 45%;
+	border-radius: 1rem;
+	margin-top: -1rem;
+	cursor: pointer;
+}
+
+.hero-image {
+	position: relative;
+}
+
+.hero-image img {
+	width: 100%;
+	max-width: 28rem;
+	height: 28rem;
+	border-radius: 1rem;
+}
+
+.hero-overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-radius: 1rem;
+	background: hsla(178, 100%, 50%, 0.3);
+	display: grid;
+	place-items: center;
+	opacity: 0;
+	transition: all 0.6s;
+}
+
+.hero-overlay .icon-eye {
+	width: 5rem;
+	height: 5rem;
+}
+.hero-overlay:hover {
+	opacity: 1;
 }
 
 .title {
@@ -43,6 +89,12 @@ main {
 	font-size: 2rem;
 	font-weight: 400;
 	margin: 2rem 0;
+	cursor: pointer;
+	transition: color 0.6s;
+}
+
+.title:hover {
+	color: var(--hover-color);
 }
 
 .description {
@@ -83,6 +135,12 @@ hr {
 
 .name {
 	color: #fff;
+	cursor: pointer;
+	transition: color 0.6;
+}
+
+.name:hover {
+	color: var(--hover-color);
 }
 
 footer {
