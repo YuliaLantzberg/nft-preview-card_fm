@@ -36,18 +36,12 @@ main {
 	padding: 2rem;
 }
 
-.hero {
-	max-width: 31rem;
-	border-radius: 1rem;
-	margin-top: -1rem;
-	cursor: pointer;
-}
-
 .hero-wrapper {
-	max-width: 90%;
+	width: 100%;
 	max-height: 45%;
 	border-radius: 1rem;
-	margin-top: -1rem;
+	margin-top: -2.5rem;
+	margin-bottom: 3rem;
 	cursor: pointer;
 }
 
@@ -57,8 +51,6 @@ main {
 
 .hero-image img {
 	width: 100%;
-	max-width: 28rem;
-	height: 28rem;
 	border-radius: 1rem;
 }
 
@@ -146,4 +138,28 @@ hr {
 footer {
 	position: absolute;
 	bottom: 0;
+}
+
+@media (min-width: 1500px) and (min-height: 600px) {
+	main {
+		height: 95%;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+	main {
+		width: 50%;
+		height: 80%;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+	main {
+		width: 85%;
+		height: 80%;
+	}
+
+	.hero-wrapper {
+		margin-top: -1rem;
+	}
 }
