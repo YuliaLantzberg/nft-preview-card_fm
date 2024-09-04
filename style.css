@@ -97,7 +97,7 @@ body {
 	font-weight: var(--fw-light);
 	color: var(--primary-blue-300);
 	background-color: var(--neutral-blue-800);
-	margin: 1.5rem;
+	margin: 1rem;
 }
 
 /* Card styles */
