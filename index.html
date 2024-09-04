@@ -19,60 +19,35 @@
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Mentor | NFT preview card component</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
-	<body>
+	<body class="grid-center">
 		<main>
-			<div class="hero-wrapper">
-				<div class="hero-image">
+			<article class="card">
+				<picture class="card__hero">
 					<img
 						src="images/image-equilibrium.jpg"
 						alt="cube balancing on one corner pick"
 					/>
-					<div class="hero-overlay">
+					<div class="hero-overlay grid-center">
 						<img class="icon-eye" src="images/icon-view.svg" alt="" />
 					</div>
-				</div>
-			</div>
-
-			<div class="content">
-				<h1 class="title">Equilibrium #3429</h1>
-				<p class="description">
-					Our Equilibrium collection promotes balance and calm.
-				</p>
-				<div class="details">
-					<div class="details-left">
-						<img class="icon" src="images/icon-ethereum.svg" alt="" />
-						<p>0.041ETH</p>
-					</div>
-					<div class="details-right">
-						<img class="icon" src="images/icon-clock.svg" alt="" />
-						<p>3 days left</p>
-					</div>
-				</div>
-			</div>
-			<hr />
-			<div class="footer">
-				<img src="images/image-avatar.png" alt="Jules Wyvern" />
-				<p>Creation of <span class="name">Jules Wyvern</span></p>
-			</div>
+				</picture>
+				<section class="card__content">
+					<h1 class="card__title">Equilibrium #3429</h1>
+					<p class="card__description">
+						Our Equilibrium collection promotes balance and calm.
+					</p>
+					<p class="card__details flex-row-group">
+						<span data-icon="ethereum">0.041ETH</span
+						><span data-icon="clock">3 days left</span>
+					</p>
+				</section>
+				<hr />
+				<section class="card__footer flex-row-group">
+					<img src="images/image-avatar.png" alt="Jules Wyvern" />
+					<p>Creation of <span class="card__author-name">Jules Wyvern</span></p>
+				</section>
+			</article>
 		</main>
-
-		<footer class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Yulia Lantzberg</a>.
-		</footer>
 	</body>
 </html>
