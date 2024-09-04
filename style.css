@@ -103,10 +103,10 @@ body {
 .card {
 	--content-padding: 1rem 0;
 	--content-border-radius: 0.5rem;
-	--content-spacing: 0.5rem;
+	--content-spacing: 1rem;
 
 	background-color: var(--neutral-blue-700);
-	padding: 1rem;
+	padding: 1.25rem;
 	border-radius: var(--content-border-radius);
 	max-width: 22rem;
 }
